@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Veloz Landing Page
+
+A professional landing page for Veloz - the first cross-chain mini-app aggregator and marketplace.
+
+## About Veloz
+
+**Your home for playing and earning — all in one hub.**
+
+Veloz solves the problem of scattered mini-apps across multiple chains (Base, Worldchain, Kaia) by providing a unified marketplace where users can discover, play, and earn rewards from all mini-apps in one interface.
+
+### Key Features
+
+- **Unified Discovery**: Find every mini-app across all chains
+- **Direct Play**: Play apps directly in our interface
+- **Stacked Rewards**: Earn additional rewards on top of existing app rewards
+- **Quality First**: First-party mini-apps that set the standard
+
+### Target Audience
+
+- **Primary**: Crypto-native reward hunters (Galxe, Layer3, Zealy users)
+- **Expansion**: Web2 gamers and app developers
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with TypeScript
+- **Styling**: TailwindCSS v4
+- **Components**: shadcn/ui
+- **Icons**: Lucide React
+
+## Brand Colors
+
+- **Primary**: #FF5722 (Deep Orange)
+- **Secondary**: #FF7043 (Orange)
+- **Dark**: #362417 (Dark Brown)
+- **Neutrals**: Black/White
 
 ## Getting Started
 
-First, run the development server:
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── globals.css       # Global styles with brand colors
+│   ├── layout.tsx        # Root layout
+│   └── page.tsx          # Main landing page
+├── components/
+│   └── ui/              # shadcn/ui components
+└── lib/
+    └── utils.ts         # Utility functions
+```
 
-## Deploy on Vercel
+## Design Principles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Professional $10k+ quality appearance
+- Mobile-first responsive design
+- Clean, modern aesthetic (no random gradients)
+- Reference ton.app design style
+- Generous whitespace and clean sections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Social Links
+
+- **Twitter**: [@veloz_one](https://twitter.com/veloz_one)
+- **Website**: Coming soon
+
+---
+
+Built with ❤️ for the Web3 gaming community.
