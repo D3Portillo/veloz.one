@@ -16,6 +16,9 @@ import {
   Twitter,
 } from "lucide-react"
 
+import asset_logo_full from "@/assets/logo-full.png"
+import asset_logo from "@/assets/veloz.png"
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -23,16 +26,9 @@ export default function Home() {
       <header className="border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Image
-              src="/veloz.png"
-              alt="Veloz Logo"
-              width={32}
-              height={32}
-              className="w-8 h-8"
-            />
-            <span className="text-xl font-bold text-veloz-dark font-michroma">
-              Veloz
-            </span>
+            <figure className="w-40">
+              <Image src={asset_logo_full} alt="" />
+            </figure>
           </div>
           <div className="flex items-center space-x-4">
             <a
@@ -315,12 +311,12 @@ export default function Home() {
         </div>
       </section>
       {/* Why It Works */}
-      <section className="py-20 bg-veloz-dark text-white">
+      <section className="py-44 bg-gradient-to-b from-veloz-dark to-veloz-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6 font-rubik">
             The Veloz Approach
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-16">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto mb-16">
             By aggregating all mini-apps and stacking our own reward layer, we
             create a self-reinforcing network effect.
           </p>
@@ -330,10 +326,8 @@ export default function Home() {
               <div className="w-16 h-16 bg-veloz-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Gamepad2 className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2 font-rubik">
-                More Apps
-              </h3>
-              <p className="text-gray-300">
+              <h3 className="text-lg font-bold mb-1 font-rubik">More Apps</h3>
+              <p className="text-white/80">
                 Attract all mini-apps to our platform
               </p>
             </div>
@@ -342,10 +336,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-veloz-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Trophy className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2 font-rubik">
+              <h3 className="text-lg font-bold mb-1 font-rubik">
                 More Rewards
               </h3>
-              <p className="text-gray-300">
+              <p className="text-white/80">
                 Stack additional incentives on top
               </p>
             </div>
@@ -354,30 +348,26 @@ export default function Home() {
               <div className="w-16 h-16 bg-veloz-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2 font-rubik">
-                More Users
-              </h3>
-              <p className="text-gray-300">Attract reward hunters and gamers</p>
+              <h3 className="text-lg font-bold mb-1 font-rubik">More Users</h3>
+              <p className="text-white/80">Attract reward hunters and gamers</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-veloz-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-2 font-rubik">
-                More Growth
-              </h3>
-              <p className="text-gray-300">
+              <h3 className="text-lg font-bold mb-1 font-rubik">More Growth</h3>
+              <p className="text-white/80">
                 Cycle repeats, network grows stronger
               </p>
             </div>
           </div>
 
-          <div className="mt-16 p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
+          <div className="mt-16 p-16 bg-white/10 shadow-2xl shadow-white/15 rounded-3xl backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4 font-rubik">
               The Network Effect
             </h3>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Like how Galxe owns Web3 events and Steam owns PC games, Veloz
               will own on-chain games and mini-apps. Whoever controls discovery
               controls attention—and in Web3, attention drives both transactions
@@ -387,7 +377,7 @@ export default function Home() {
         </div>
       </section>{" "}
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-veloz-primary to-veloz-secondary">
+      <section className="py-20 border-t border-veloz-dark bg-veloz-primary">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-4xl font-bold mb-6 font-rubik">
             Ready to Join the Revolution?
@@ -416,19 +406,14 @@ export default function Home() {
         </div>
       </section>
       {/* Footer */}
-      <footer className="bg-veloz-dark text-white py-12">
+      <footer className="bg-veloz-dark text-white py-24">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Image
-                  src="/veloz-white.png"
-                  alt="Veloz Logo"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
-                />
-                <span className="text-xl font-bold font-michroma">Veloz</span>
+                <figure className="w-12">
+                  <Image className="invert" src={asset_logo} alt="" />
+                </figure>
               </div>
               <p className="text-gray-400">
                 Your home for playing and earning — all in one hub.

@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Michroma, Rubik, Inter } from "next/font/google";
+import { Rubik, Inter } from "next/font/google";
 import "./globals.css";
-
-const michroma = Michroma({
-  weight: "400",
-  variable: "--font-michroma",
-  subsets: ["latin"],
-});
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -31,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${michroma.variable} ${rubik.variable} ${inter.variable} antialiased`}
+        className={`${rubik.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
